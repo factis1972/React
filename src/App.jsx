@@ -13,7 +13,7 @@ function App() {
         <p> Esta es una aplicación de ejemplo usando Vite + React</p>
         <Boton />
         <ListaEstudiantes nombre = "Julieta Actis" edad="18" />
-        <ListaEstudiantes nombre = "Constanza Actis" edad="12" />
+        <ListaEstudiantes nombre = "Constanza Actis" edad="20" />
       </div>
   )
 }
