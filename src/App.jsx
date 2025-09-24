@@ -12,8 +12,7 @@ function App() {
         <h1>Bienvenido a mi aplicación</h1>
         <p> Esta es una aplicación de ejemplo usando Vite + React</p>
         <Boton />
-        <ListaEstudiantes nombre = "Julieta Actis" edad="18" />
-        <ListaEstudiantes nombre = "Constanza Actis" edad="20" />
+        <ListaEstudiantes />
       </div>
   )
 }
