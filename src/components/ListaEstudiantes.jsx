@@ -1,4 +1,4 @@
-import Estudiante from "./estudiante";
+import Estudiante from "./Estudiante";
 
 const ListaEstudiantes = () => {
     const datosEstudiantes = [

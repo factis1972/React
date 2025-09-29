@@ -10,6 +10,13 @@ import Header from './components/Header.jsx'
 import Nav from './components/Nav.jsx'
 import Main from './components/Main.jsx'
 import Footer from './components/Footer.jsx'
+/*
+import ListaEstudiantes from './components/ListaEstudiantes.jsx'
+*/
+import ListaEmpleados from './components/EjerciciosClase3/listaEmpleados.jsx'
+import ListaProyectos from './components/EjerciciosClase3/ListaProyectos.jsx'
+import ListaIntereses from './components/EjerciciosClase3/ListaInterese.jsx'
+
 
 function App() {
 
@@ -18,9 +25,10 @@ function App() {
       <Header />
       <Nav />
       <Main />
+      <ListaEmpleados />
+      <ListaProyectos />
+      <ListaIntereses />
       <Footer />
-
-
     </>      
 
     /*
