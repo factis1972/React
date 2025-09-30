@@ -1,6 +1,7 @@
 const TarjetaProyecto = ({index, proy}) => {
     const {titulo, descripcion, botonTexto} = proy;
     const handleClick = () =>{
+        alert('Elegiste el proyecto: ', {titulo});
         console.log('Explorando: ', {titulo});
     }
 

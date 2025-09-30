@@ -16,6 +16,9 @@ import ListaEstudiantes from './components/ListaEstudiantes.jsx'
 import ListaEmpleados from './components/EjerciciosClase3/listaEmpleados.jsx'
 import ListaProyectos from './components/EjerciciosClase3/ListaProyectos.jsx'
 import ListaIntereses from './components/EjerciciosClase3/ListaInterese.jsx'
+import BotonContador from './components/Clase4/BotonContador.jsx'
+import Formulario from './components/Clase4/Formulario.jsx'
+import Carrito from './components/Clase4/Carrito.jsx'
 
 
 function App() {
@@ -25,20 +28,28 @@ function App() {
       <Header />
       <Nav />
       <Main />
-      <ListaEmpleados />
-      <ListaProyectos />
-      <ListaIntereses />
+      <BotonContador />
+      <Formulario />
+      <Carrito />
       <Footer />
     </>      
 
-    /*
+/*
+Clase 2
       <div>
         <h1>Bienvenido a mi aplicación</h1>
         <p> Esta es una aplicación de ejemplo usando Vite + React</p>
         <Boton />
         <ListaEstudiantes />
       </div>
+
+Ejercicio clase 3
+      <ListaEmpleados />
+      <ListaProyectos />
+      <ListaIntereses />
+
 */      
+
   )
 }
 
