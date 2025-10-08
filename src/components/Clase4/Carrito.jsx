@@ -40,14 +40,16 @@ const Carrito = () => {
                         <button onClick={() => vaciarCarrito()}>Vaciar Carrito</button>
                     </td>
                 </tr>
-                <tr>   
                     {carrito.map(producto =>
-                            <p>
-                                {producto.nombre}:
-                                {producto.precio}$
-                            </p>
+                            <tr>
+                                <td>
+                                    {producto.nombre}:
+                                </td>
+                                <td>
+                                    {producto.precio}$
+                                </td>
+                            </tr>
                         )}
-                </tr>
             </table>       
         </div>
     );

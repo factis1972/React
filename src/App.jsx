@@ -19,7 +19,11 @@ import ListaIntereses from './components/EjerciciosClase3/ListaInterese.jsx'
 import BotonContador from './components/Clase4/BotonContador.jsx'
 import Formulario from './components/Clase4/Formulario.jsx'
 import Carrito from './components/Clase4/Carrito.jsx'
+import Cliker from './components/Clase5/Clicker.jsx'
 
+import { Routes, Route } from 'react-router-dom'
+import Inicio from './components/Clase6/Inicio.jsx'
+import Contacto from './components/Clase6/Contacto.jsx'
 
 function App() {
 
@@ -28,9 +32,11 @@ function App() {
       <Header />
       <Nav />
       <Main />
-      <BotonContador />
-      <Formulario />
-      <Carrito />
+
+      <Routes>
+        <Route path={'/'} element={<Inicio/>} />
+        <Route path={'/contacto'} element={<Contacto/>} />
+      </Routes>
       <Footer />
     </>      
 
