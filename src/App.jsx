@@ -24,6 +24,7 @@ import Cliker from './components/Clase5/Clicker.jsx'
 import { Routes, Route } from 'react-router-dom'
 import Inicio from './components/Clase6/Inicio.jsx'
 import Contacto from './components/Clase6/Contacto.jsx'
+import DetalleProducto from './components/Clase6/DetalleProducto.jsx'
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
       <Routes>
         <Route path={'/'} element={<Inicio/>} />
         <Route path={'/contacto'} element={<Contacto/>} />
+        <Route path={'/producto/:id'} element={<DetalleProducto/>} />
       </Routes>
       <Footer />
     </>      

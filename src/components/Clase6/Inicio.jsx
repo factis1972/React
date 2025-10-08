@@ -1,3 +1,4 @@
+
 import Productos from "../Clase5/Productos";
 
 const Inicio = () => {
@@ -6,3 +7,5 @@ const Inicio = () => {
     );
 }
 export default Inicio;
+
+
