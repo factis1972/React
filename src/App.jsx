@@ -25,18 +25,39 @@ import { Routes, Route } from 'react-router-dom'
 import Inicio from './components/Clase6/Inicio.jsx'
 import Contacto from './components/Clase6/Contacto.jsx'
 import DetalleProducto from './components/Clase6/DetalleProducto.jsx'
+import Login from './components/Clase7/Login.jsx'
+import Admin from './components/Clase7/Admin.jsx'
+import RutaProtegida from './components/Clase7/RutaProtegida.jsx'
 
 function App() {
+
+  const [isAuthenticated, setisAuthenticated] = useState(true);
+
+  const cerrarSesion = () => setisAuthenticated(false);
+  const iniciarSesion = () => setisAuthenticated(true);
 
   return (
     <>
       <Header />
       <Nav />
+
+      { isAuthenticated?
+        (<button onClick={cerrarSesion}>Cerrar Sesion</button>):
+        (<button onClick={iniciarSesion}>Iniciar Sesion</button>)
+
+      }
       <Main />
 
       <Routes>
         <Route path={'/'} element={<Inicio/>} />
         <Route path={'/contacto'} element={<Contacto/>} />
+        <Route path={'/login'} element={<Login/>} />
+        <Route path={'/admin'} element={
+          <RutaProtegida isAuthenticated={isAuthenticated}>
+            <h2>Acá se muestra el Admin</h2>
+            <Admin/>
+          </RutaProtegida>
+        } />
         <Route path={'/producto/:id'} element={<DetalleProducto/>} />
       </Routes>
       <Footer />
@@ -61,4 +82,4 @@ Ejercicio clase 3
   )
 }
 
-export default App
+export default App;
