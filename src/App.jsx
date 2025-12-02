@@ -47,7 +47,7 @@ function App() {
 
       }
       <Main />
-
+      <reactLogo/>
       <Routes>
         <Route path={'/'} element={<Inicio/>} />
         <Route path={'/contacto'} element={<Contacto/>} />
